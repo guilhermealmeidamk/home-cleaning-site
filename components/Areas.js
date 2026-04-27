@@ -1,5 +1,5 @@
 export default function Areas() {
-  const areas = ['Charlotte', 'South Charlotte', 'Matthews', 'Waxhaw', 'Ballantyne', 'Pineville', 'Indian Trail', 'Fort Mill', 'Huntersville', 'Cornelius', 'Davidson', 'Mint Hill']
+  const areas = ['Charlotte', 'Lancaster', 'South Charlotte', 'Matthews', 'Waxhaw', 'Ballantyne', 'Pineville', 'Indian Trail', 'Fort Mill', 'Huntersville', 'Cornelius', 'Davidson', 'Mint Hill']
 
   return (
     <section

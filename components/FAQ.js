@@ -4,7 +4,7 @@ export default function FAQ() {
   const qas = [
     { q: 'What areas do you serve?', a: 'We serve Charlotte and nearby communities including South Charlotte, Matthews, Waxhaw, and more.' },
     { q: 'Do you offer recurring cleaning?', a: 'Yes — weekly, biweekly and monthly recurring plans are available.' },
-    { q: 'Do I need to be home?', a: 'You don’t need to be home — we work with secure key policies and clear instructions.' },
+    { q: 'Do I need to be home during the cleaning?', a: 'YNot at all. Many of our clients provide entry instructions and trust us to do the work. All our cleaners are background-checked and fully bonded.' },
     { q: 'Do you bring supplies?', a: 'We can bring supplies or use yours; tell us your preference when requesting a quote.' }
   ]
   const [openIndex, setOpenIndex] = useState(null)
