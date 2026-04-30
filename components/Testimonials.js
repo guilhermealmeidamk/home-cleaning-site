@@ -5,7 +5,7 @@ export default function Testimonials() {
     {
       text: "I've tried several cleaning services and In Home Cleaning is on another level. My apartment felt brand new - they even cleaned spots I'd forgotten existed!",
       name: 'Jessica M.',
-      location: 'Austin, TX',
+      location: 'Charlotte, NC',
       initials: 'JM',
     },
     {

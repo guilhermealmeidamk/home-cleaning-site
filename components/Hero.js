@@ -50,7 +50,7 @@ export default function Hero() {
             Your home deserves this care.
           </h1>
           <p className="mt-6 max-w-3xl text-lg font-semibold text-primary md:text-xl">
-            We bring a new standard of cleanliness to your space — professional, gentle, and always done with heart. Because{' '}
+            We bring a new standard of cleanliness to your space, professional, gentle, and always done with heart. Because{' '}
             <span className="text-primary">every corner</span> tells a story.
           </p>
           <div className="mt-8 mb-6 flex flex-col items-center gap-3 md:mb-0">
