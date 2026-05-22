@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 const LINKS = {
-  siteUrl: 'https://inhomecleaning.com',
+  siteUrl: 'https://inhomecleaningnc.com',
   phoneNumber: '+15615621319',
   whatsappNumber: '15615621319'
 }
