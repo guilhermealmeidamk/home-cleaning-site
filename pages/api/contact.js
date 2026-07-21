@@ -20,9 +20,28 @@ export default async function handler(req, res) {
     const info = await transporter.sendMail({
       from: process.env.SMTP_FROM || process.env.SMTP_USER,
       to: process.env.CONTACT_TO,
-      subject: `Contato do site: ${name}`,
-      text: `Nome: ${name}\nEmail: ${email}\n\nMensagem:\n${message}`,
-      html: `<p><strong>Nome:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Mensagem:</strong></p><p>${message}</p>`
+      subject: `✨ Novo lead pelo site — ${name}`,
+      text: `NOVO LEAD PELO SITE\n\n\nNome:\n${name}\n\n\nEmail:\n${email}\n\n\nMensagem:\n${message}`,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto; padding: 24px; background: #f7f7f7;">
+          <h2 style="color: #2b7a4b; margin-bottom: 24px;">✨ Novo contato pelo site</h2>
+
+          <div style="background: #ffffff; border-radius: 8px; padding: 16px 20px; margin-bottom: 16px; border-left: 4px solid #2b7a4b;">
+            <p style="margin: 0; font-size: 12px; text-transform: uppercase; color: #888;">Nome</p>
+            <p style="margin: 4px 0 0; font-size: 16px; color: #222;">${name}</p>
+          </div>
+
+          <div style="background: #ffffff; border-radius: 8px; padding: 16px 20px; margin-bottom: 16px; border-left: 4px solid #2b7a4b;">
+            <p style="margin: 0; font-size: 12px; text-transform: uppercase; color: #888;">Email</p>
+            <p style="margin: 4px 0 0; font-size: 16px; color: #222;">${email}</p>
+          </div>
+
+          <div style="background: #ffffff; border-radius: 8px; padding: 16px 20px; border-left: 4px solid #2b7a4b;">
+            <p style="margin: 0; font-size: 12px; text-transform: uppercase; color: #888;">Mensagem</p>
+            <p style="margin: 4px 0 0; font-size: 16px; color: #222; white-space: pre-line;">${message}</p>
+          </div>
+        </div>
+      `
     })
 
     return res.status(200).json({ ok: true, info })
